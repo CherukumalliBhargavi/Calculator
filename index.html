@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova | Smart Calculator</title>
+  <link rel="stylesheet" href="D:\Calculator\style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">N</div>
+        <div>
+          <h1>Nova Calculator</h1>
+          <p>Smart. Simple. Precise.</p>
+        </div>
+      </div>
+      <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">☼</button>
+    </header>
+
+    <section class="calculator">
+      <div class="screen">
+        <div class="screen-top">
+          <span>DISPLAY</span>
+          <span id="status">READY</span>
+        </div>
+        <div id="expression" class="expression">0</div>
+        <div id="result" class="result">0</div>
+      </div>
+
+      <div class="keypad">
+        <button class="key utility" data-action="clear">AC</button>
+        <button class="key utility" data-action="delete" aria-label="Delete">⌫</button>
+        <button class="key utility" data-value="(">(</button>
+        <button class="key utility" data-value=")">)</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key operator" data-value="÷">÷</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key operator" data-value="×">×</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key operator" data-value="−">−</button>
+
+        <button class="key utility" data-action="percent">%</button>
+        <button class="key" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+        <button class="key operator" data-value="+">+</button>
+
+        <button class="key equal" data-action="calculate">=</button>
+      </div>
+    </section>
+
+    <section class="history">
+      <div class="history-header">
+        <div>
+          <h2>Calculation History</h2>
+          <p>Your recent calculations</p>
+        </div>
+        <button id="clearHistory" class="clear-history">Clear</button>
+      </div>
+      <ul id="historyList">
+        <li class="empty">Your calculations will appear here.</li>
+      </ul>
+    </section>
+
+    <footer>Designed for everyday precision <span>•</span> Nova v1.0</footer>
+  </main>
+
+  <script src="D:\Calculator\script.js"></script>
+</body>
+</html>
